@@ -1,0 +1,169 @@
+/*Formatação Geral*/
+*{  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+footer{ font-family: Helvetica; }
+
+a{ 
+    text-decoration: none;
+    color: #fffdea;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+ul{ list-style: none;}
+
+
+input[type=search]{
+    background-color: #f00;
+    border: 2px #fffdea solid;
+    border-radius: 3px;
+    padding: 8px;
+    margin-left: 10px;
+}
+
+input[type=search]::placeholder{
+    color: #fffdea;
+    font-size: 1rem ;
+    font-family: helvetica, sans-serif;
+}
+
+/*Footer*/
+footer{
+    background-color: #000;
+    padding: 20px;
+    
+}
+.footer-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px;
+}
+
+.footer-container .col{
+    width: 50%;
+}
+
+.footer-container .col li{
+    padding: 5px;
+}
+
+.footer-container .col .list-header{ 
+    font-size: 17px;
+}
+
+.social-links a{
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.social-links a:hover{
+    color: #f00;
+    transition: all .4s ease;
+}
+
+.footer-container .col p{
+    color: #fff;
+    margin-top: 20px;
+    
+}
+
+.address p{
+    max-width: 155px;
+}
+
+.footer-mid{
+    width: 80%;
+    margin: 5px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-mid input[type=search]{
+    display: block;
+    background-color: #000;
+    padding: 10px;
+    width: 280px;
+}
+
+.footer-mid button{
+    display: block;
+    background-color: #f00;
+    color: #fffdea;
+    padding: 11px;
+    text-transform: uppercase;
+    width: 280px;
+    outline: none;
+    border-radius: 3px;
+}
+
+.footer-mid button:hover{
+    cursor: pointer;
+    background-color: #b90e0e;
+}
+
+.footer-bottom {
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #fff;
+    padding: 20px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer-bottom a{
+    color: #fff;
+}
+
+
+@media screen and (max-width:850px) {
+
+    /*footer*/
+    footer{
+        margin-top: 60px;
+    }
+    .footer-container {
+        flex-direction: column;
+    }  
+
+    .footer-container .col ul{
+        display: none;
+    }
+
+
+    .footer-container .col .main-list{
+        display: block;
+    } 
+    
+    .footer-mid{
+        flex-direction: column;
+    }
+
+    .footer-mid button{
+        margin: 15px auto;
+        width: 100%;   
+    }
+
+    .footer-mid input[type=search]{
+        width: 100%;   
+    }
+
+    .footer-bottom{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .footer-bottom p{
+        margin-top: 15px;
+    }
+}
